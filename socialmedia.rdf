@@ -1,0 +1,500 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#/"
+     xml:base="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmls.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:socialmedia="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#AppartientaGroupe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#AppartientaGroupe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Groupe"/>
+        <rdfs:comment>Un utilisateur est un membre dans un groupe</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#aPourHashtag -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#aPourHashtag">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Hashtag"/>
+        <rdfs:comment>une publication contient un hashtag</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#aPourMedia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#aPourMedia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Media"/>
+        <rdfs:comment>une publication contient un fichier media</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#commente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#commente">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Commentaire"/>
+        <rdfs:comment>Un utilisateur commente une publication</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#commentesur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#commentesur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Commentaire"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+        <rdfs:comment>un commentaire est sur une publication</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#modere -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#modere">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Moderateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Groupe"/>
+        <rdfs:comment>un moderateur gere un groupe</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#publie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#publie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+        <rdfs:comment>un Utilisateur publie un contenu</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#suit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#suit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#contenu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#contenu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>contenu textuel</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#datePublication -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#datePublication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>date de publication</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#details -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#details">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>titre de media</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>email de l&apos;utilisateur</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#nom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>le nom dêun utilisateur</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#nomGroupe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#nomGroupe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Groupe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>nom du groupe</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#texteCommentaire -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#texteCommentaire">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Commentaire"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>contenu d&apos;un commentaire</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#titre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#titre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>titre d&apos;une publication</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Hashtag"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Commentaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Commentaire"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Groupe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Groupe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Hashtag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Hashtag"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Image">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#ImagePost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#ImagePost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+        <rdfs:comment>un utilisateur suit un autre</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Lien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Lien">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Media"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Membre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Membre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Moderateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Moderateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Texte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Texte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Utilisateur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Video -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Video">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#VideoPost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#VideoPost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#ClaraAdmin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#ClaraAdmin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Admin"/>
+        <socialmedia:publie rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostRomeVideo"/>
+        <socialmedia:email>clara@admin.com</socialmedia:email>
+        <socialmedia:nom>Clara Dubois</socialmedia:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#GroupeRome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#GroupeRome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Groupe"/>
+        <socialmedia:nomGroupe>decouverte de rome</socialmedia:nomGroupe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#GroupeVoyageFrance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#GroupeVoyageFrance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Groupe"/>
+        <socialmedia:nomGroupe>voyage en france</socialmedia:nomGroupe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#ImageAlpes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#ImageAlpes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Image"/>
+        <socialmedia:details>Image de randonnee</socialmedia:details>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#JeanDupont -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#JeanDupont">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Membre"/>
+        <socialmedia:AppartientaGroupe rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#GroupeVoyageFrance"/>
+        <socialmedia:commente rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#com2"/>
+        <socialmedia:publie rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostParis"/>
+        <socialmedia:suit rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#SofiaLopez"/>
+        <socialmedia:email>jean@exemple.com</socialmedia:email>
+        <socialmedia:nom>Jean Dupont</socialmedia:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#MehdiMod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#MehdiMod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Moderateur"/>
+        <socialmedia:modere rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#GroupeVoyageFrance"/>
+        <socialmedia:email>mehdi@mod.com</socialmedia:email>
+        <socialmedia:nom>Mahdi Karim</socialmedia:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostMontagne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostMontagne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#ImagePost"/>
+        <socialmedia:aPourMedia rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#ImageAlpes"/>
+        <socialmedia:contenu>photo des Alpes</socialmedia:contenu>
+        <socialmedia:datePublication>2024-03-28T08:30:00</socialmedia:datePublication>
+        <socialmedia:titre>randonnee</socialmedia:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostParis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostParis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Texte"/>
+        <socialmedia:aPourHashtag rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#TagVoyage"/>
+        <socialmedia:contenu>Superbe semaine a la Tour Eiffel</socialmedia:contenu>
+        <socialmedia:datePublication rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-01T10:00:00</socialmedia:datePublication>
+        <socialmedia:titre>Mon voyage a paris</socialmedia:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostRomeVideo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostRomeVideo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#VideoPost"/>
+        <socialmedia:aPourHashtag rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#TagHistoire"/>
+        <socialmedia:aPourMedia rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#VideoColisee"/>
+        <socialmedia:contenu>video du mon trip</socialmedia:contenu>
+        <socialmedia:datePublication>2024-04-02T15:00:00</socialmedia:datePublication>
+        <socialmedia:titre>visite du colisée</socialmedia:titre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#SofiaLopez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#SofiaLopez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Membre"/>
+        <socialmedia:AppartientaGroupe rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#GroupeRome"/>
+        <socialmedia:commente rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#com1"/>
+        <socialmedia:publie rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostMontagne"/>
+        <socialmedia:email>sofia@lopez.com</socialmedia:email>
+        <socialmedia:nom>Sofia Lopez</socialmedia:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#TagHistoire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#TagHistoire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Hashtag"/>
+        <skos:prefLabel>#histoire</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#TagVoyage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#TagVoyage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Hashtag"/>
+        <skos:prefLabel>#voyage</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#VideoColisee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#VideoColisee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Video"/>
+        <socialmedia:details>video du colisee</socialmedia:details>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#com1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#com1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Commentaire"/>
+        <socialmedia:commentesur rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostParis"/>
+        <socialmedia:texteCommentaire>wow, j&apos;ai adoré aussi la tour eiffel !</socialmedia:texteCommentaire>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#com2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#com2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#Commentaire"/>
+        <socialmedia:commentesur rdf:resource="http://www.semanticweb.org/administrator/ontologies/2025/3/socialmedia#PostRomeVideo"/>
+        <socialmedia:texteCommentaire>belle video , merci de partage !</socialmedia:texteCommentaire>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
